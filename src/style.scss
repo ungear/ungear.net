@@ -6,18 +6,25 @@ body{
 header{
   height: 200px;
   background: #ccc;
-  position: relative;
   padding: 20px;
+  box-sizing: border-box;
+  
+  .header-container{
+    padding: 0 100px;
+    position: relative;
+    height: 100%;
+  }
 }
 
-.photo{
-  width: 100px;
-  height: 100px;
+$photoSize: 200px;
+.photo {
+  width: $photoSize;
+  height: $photoSize;
   border-radius: 50%;
   background: firebrick;
   position: absolute;
-  right:0;
-  bottom: -50px;
+  right: calc($photoSize/2);
+  bottom: - calc($photoSize/2);
 }
 
 main{
