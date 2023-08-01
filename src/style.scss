@@ -1,32 +1,34 @@
-body{
+body {
   margin: 0;
   padding: 0;
 }
 
-header{
-  height: 200px;
-  background: #ccc;
-  padding: 20px;
-  box-sizing: border-box;
-  
-  .header-container{
-    padding: 0 100px;
-    position: relative;
-    height: 100%;
-  }
+main {
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 100px;
 }
 
-$photoSize: 200px;
 .photo {
-  width: $photoSize;
-  height: $photoSize;
+  display:flex;
+  justify-content: center;
+}
+
+.photo-image {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background: firebrick;
-  position: absolute;
-  right: calc($photoSize/2);
-  bottom: - calc($photoSize/2);
 }
 
-main{
+.name {
+  text-align: center;
+}
+.details {
+  text-align: center;
+}
 
+.icons{
+  display:flex;
+  justify-content: center;
 }
